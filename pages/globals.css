@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  box-sizing: border-box;
+}
+
+p {
+  margin-bottom: .5rem;
+}
+
 .montserrat {
   font-family: 'Montserrat', serif;
 }

@@ -47,9 +47,9 @@ export default function Home() {
       <section className="p-10 bg-[#F3F2EE]">
         <div className="w-full flex flex-center flex-row justify-between mb-10">
           <div className="w-5/12">
-            <h3 className="montserrat text-2xl mb-4">SOBRE MIM</h3>
-            <p className="montserrat">
-              Sou bacharelando em Ciência da Computação pela Pontifícia
+            <h3 className="montserrat text-2xl font-bold mb-4">SOBRE MIM</h3>
+            <p className="montserrat text-justify">
+              Cursando Bacharelado em Ciência da Computação pela Pontifícia
               Universidade Católica do Paraná, com mais de 3 anos de experiência
               em desenvolvimento web. Desejo me especializar em linguagens como
               Python e C++ e me aprofundar em desenvolvimento nativo,
@@ -60,29 +60,37 @@ export default function Home() {
             </p>
           </div>
           <div className="w-5/12 inline-block">
-            <h3 className="montserrat text-2xl mb-4">CONTATO</h3>
+            <h3 className="montserrat text-2xl font-bold mb-4">CONTATO</h3>
             <ul className="montserrat leading-8">
               <li>
                 <strong>Email</strong>:{" "}
-                <a href="mailto:renandasilvaoliveiraandrade@gmail.com">
+                <a
+                  className="underline"
+                  href="mailto:renandasilvaoliveiraandrade@gmail.com"
+                >
                   renandasilvaoliveiraandrade@gmail.com
                 </a>
               </li>
               <li>
                 <strong>Linkedin</strong>:{" "}
-                <Link href="https://www.linkedin.com/in/renan-andrade-8a06ba212/">
+                <Link
+                  className="underline"
+                  href="https://www.linkedin.com/in/renan-andrade-8a06ba212/"
+                >
                   Renan Andrade
                 </Link>
               </li>
               <li>
                 <strong>WhatsApp</strong>:{" "}
-                <Link href="https://wa.link/59ygot">+55 (41) 99878-1618</Link>
+                <Link className="underline" href="https://wa.link/59ygot">
+                  +55 (41) 99878-1618
+                </Link>
               </li>
             </ul>
           </div>
         </div>
         <div>
-          <h3 className="montserrat text-2xl mb-4">COMPETÊNCIAS</h3>
+          <h3 className="montserrat text-2xl font-bold mb-4">COMPETÊNCIAS</h3>
           <div className="flex flex-center flex-row justify-between">
             <div className="montserrat w-5/12">
               <h4 className="font-bold mb-2">SOFT SKILLS</h4>
@@ -125,8 +133,204 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="bg-[#121414] text-[#F3F2EE] py-8 px-10">
-        <h3 className="dm-serif-display text-[5rem]">Projetos</h3>
+      <section className="text-[#F3F2EE] bg-[#121414] montserrat">
+        <h3 className="dm-serif-display text-[5rem] py-8 px-10">Projetos</h3>
+        <article className="bg-[#F3F2EE] text-black flex items-center justify-between py-8 px-10">
+          <div className="border-2 w-6/12 h-[20rem] bg-[url('/jornal-estudantil.png')] bg-top bg-no-repeat bg-cover hover:bg-[url('/jornal-estudantil.gif')]"></div>
+          <div className="p-6 bg-white w-[48%] rounded-lg border-[1px] border-[#CECECE] border-box">
+            <h3 className="dm-serif-display mb-8 text-4xl">
+              Jornal Estudantil Tiradentes
+            </h3>
+            <p className="text-justify">
+              O Jornal Estudantil Tiradentes é um projeto idealizado por mim, em
+              conjunto com meu ex-professor de Língua Portuguesa, José Cristiano
+              Orrigo.
+            </p>
+            <p className="text-justify">
+              Se trata de um projeto que uniu aspectos de jornalismo e
+              tecnologia, proporcionando aos alunos uma interface simples de
+              manipulação e inserção de conteúdos por sistema de CMS, promovendo
+              a participação e o pensamento crítico dentro da comunidade
+              escolar.
+            </p>
+            <div className="my-6">
+              <h4 className="font-bold text-center w-full mb-2">
+                Tecnologias Utilizadas
+              </h4>
+              <div className="w-full flex items-center justify-around">
+                <Image
+                  className="hover:scale-105"
+                  src="/next.svg"
+                  width={100}
+                  height={50}
+                  alt="Logotipo Next.js"
+                />
+                <Image
+                  className="hover:scale-105"
+                  src="/react.svg"
+                  width={100}
+                  height={50}
+                  alt="Logotipo React.js"
+                />
+                <Image
+                  className="hover:scale-105"
+                  src="/datocms.svg"
+                  width={100}
+                  height={50}
+                  alt="Logotipo DatoCMS"
+                />
+                <Image
+                  className="hover:scale-105"
+                  src="/openweather.svg"
+                  width={100}
+                  height={50}
+                  alt="Logotpo OpenWeather API"
+                />
+              </div>
+            </div>
+            <div className="flex items-center">
+              <button
+                className="px-5 py-3 bg-black text-white mr-4 flex items-center rounded-lg hover:scale-105"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window
+                    .open(
+                      "https://github.com/marshmll/jornalestudantiltiradentes",
+                      "_blank"
+                    )
+                    .focus();
+                }}
+              >
+                <Image
+                  src="/github.png"
+                  width={30}
+                  height={30}
+                  className="mr-4"
+                  alt="Logotipo GitHub"
+                ></Image>
+                Ver no GitHub
+              </button>
+              <button
+                className="px-5 py-3 bg-red-800 text-white mr-4 flex items-center rounded-lg hover:scale-105"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window
+                    .open(
+                      "https://jornalestudantiltiradentes.vercel.app",
+                      "_blank"
+                    )
+                    .focus();
+                }}
+              >
+                <Image
+                  src="/jornal.png"
+                  width={30}
+                  height={30}
+                  className="mr-4"
+                ></Image>
+                Site do projeto
+              </button>
+            </div>
+          </div>
+        </article>
+        <article className="bg-[#F3F2EE] text-black flex items-center justify-between py-8 px-10">
+          <div className="p-6 bg-white w-[48%] rounded-lg border-[1px] border-[#CECECE] border-box">
+            <h3 className="dm-serif-display mb-8 text-4xl">
+              Jornal Estudantil Tiradentes
+            </h3>
+            <p className="text-justify">
+              O Jornal Estudantil Tiradentes é um projeto idealizado por mim, em
+              conjunto com meu ex-professor de Língua Portuguesa, José Cristiano
+              Orrigo.
+            </p>
+            <p className="text-justify">
+              Se trata de um projeto que uniu aspectos de jornalismo e
+              tecnologia, proporcionando aos alunos uma interface simples de
+              manipulação e inserção de conteúdos por sistema de CMS, promovendo
+              a participação e o pensamento crítico dentro da comunidade
+              escolar.
+            </p>
+            <div className="my-6">
+              <h4 className="font-bold text-center w-full mb-2">
+                Tecnologias Utilizadas
+              </h4>
+              <div className="w-full flex items-center justify-around">
+                <Image
+                  className="hover:scale-105"
+                  src="/next.svg"
+                  width={100}
+                  height={50}
+                  alt="Logotipo Next.js"
+                />
+                <Image
+                  className="hover:scale-105"
+                  src="/react.svg"
+                  width={100}
+                  height={50}
+                  alt="Logotipo React.js"
+                />
+                <Image
+                  className="hover:scale-105"
+                  src="/datocms.svg"
+                  width={100}
+                  height={50}
+                  alt="Logotipo DatoCMS"
+                />
+                <Image
+                  className="hover:scale-105"
+                  src="/openweather.svg"
+                  width={100}
+                  height={50}
+                  alt="Logotpo OpenWeather API"
+                />
+              </div>
+            </div>
+            <div className="flex items-center">
+              <button
+                className="px-5 py-3 bg-black text-white mr-4 flex items-center rounded-lg hover:scale-105"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window
+                    .open(
+                      "https://github.com/marshmll/jornalestudantiltiradentes",
+                      "_blank"
+                    )
+                    .focus();
+                }}
+              >
+                <Image
+                  src="/github.png"
+                  width={30}
+                  height={30}
+                  className="mr-4"
+                  alt="Logotipo GitHub"
+                ></Image>
+                Ver no GitHub
+              </button>
+              <button
+                className="px-5 py-3 bg-red-800 text-white mr-4 flex items-center rounded-lg hover:scale-105"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window
+                    .open(
+                      "https://jornalestudantiltiradentes.vercel.app",
+                      "_blank"
+                    )
+                    .focus();
+                }}
+              >
+                <Image
+                  src="/jornal.png"
+                  width={30}
+                  height={30}
+                  className="mr-4"
+                ></Image>
+                Site do projeto
+              </button>
+            </div>
+          </div>
+          <div className="border-2 w-6/12 h-[20rem] bg-[url('/jornal-estudantil.png')] bg-top bg-no-repeat bg-cover hover:bg-[url('/jornal-estudantil.gif')]"></div>
+        </article>
       </section>
     </>
   );
