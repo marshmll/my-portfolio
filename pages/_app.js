@@ -1,11 +1,11 @@
-import Head from "next/head"
-import "@fontsource/montserrat"
-import "@fontsource/italianno"
-import "@fontsource/tangerine"
-import "@fontsource/dm-serif-display"
-import "./globals.css"
+import Head from "next/head";
+import "@fontsource/montserrat";
+import "@fontsource/italianno";
+import "@fontsource/tangerine";
+import "@fontsource/dm-serif-display";
+import "./globals.css";
 
-export default function MyApp({Component, pageProps}) {
+export default function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
@@ -13,5 +13,5 @@ export default function MyApp({Component, pageProps}) {
       </Head>
       <Component {...pageProps} />
     </>
-  )
+  );
 }

@@ -163,6 +163,7 @@ export default function Home() {
                   src="/next.svg"
                   width={100}
                   height={50}
+                  title="Next.js"
                   alt="Logotipo Next.js"
                 />
                 <Image
@@ -170,6 +171,7 @@ export default function Home() {
                   src="/react.svg"
                   width={100}
                   height={50}
+                  title="React.js"
                   alt="Logotipo React.js"
                 />
                 <Image
@@ -177,6 +179,7 @@ export default function Home() {
                   src="/datocms.svg"
                   width={100}
                   height={50}
+                  title="DatoCMS"
                   alt="Logotipo DatoCMS"
                 />
                 <Image
@@ -184,13 +187,14 @@ export default function Home() {
                   src="/openweather.svg"
                   width={100}
                   height={50}
+                  title="OpenWeather API"
                   alt="Logotpo OpenWeather API"
                 />
               </div>
             </div>
             <div className="flex items-center">
               <button
-                className="px-5 py-3 bg-black text-white mr-4 flex items-center rounded-lg hover:scale-105"
+                className="px-5 py-3 bg-black text-white mr-4 mt-4 flex items-center rounded-lg hover:scale-105"
                 onClick={(e) => {
                   e.preventDefault();
                   window
@@ -211,7 +215,7 @@ export default function Home() {
                 Ver no GitHub
               </button>
               <button
-                className="px-5 py-3 bg-red-800 text-white mr-4 flex items-center rounded-lg hover:scale-105"
+                className="px-5 py-3 bg-red-800 text-white mr-4 mt-4 flex items-center rounded-lg hover:scale-105"
                 onClick={(e) => {
                   e.preventDefault();
                   window
@@ -235,20 +239,20 @@ export default function Home() {
         </article>
         <article className="bg-[#F3F2EE] text-black flex items-center justify-between py-8 px-10">
           <div className="p-6 bg-white w-[48%] rounded-lg border-[1px] border-[#CECECE] border-box">
-            <h3 className="dm-serif-display mb-8 text-4xl">
-              Jornal Estudantil Tiradentes
-            </h3>
+            <h3 className="montserrat mb-8 text-4xl font-bold">BIOHAZRD</h3>
             <p className="text-justify">
-              O Jornal Estudantil Tiradentes é um projeto idealizado por mim, em
-              conjunto com meu ex-professor de Língua Portuguesa, José Cristiano
-              Orrigo.
+              BIOHAZRD é um jogo concebido por Victor Valério, Pedro Senes,
+              Dillan Fernandes, Riscala Miguel Fadel Neto e Thomas Steinhausser
+              (colegas da PUCPR), inicialmente desenvolvido em uma engine web
+              denominada <strong>Construct</strong>.
             </p>
             <p className="text-justify">
-              Se trata de um projeto que uniu aspectos de jornalismo e
-              tecnologia, proporcionando aos alunos uma interface simples de
-              manipulação e inserção de conteúdos por sistema de CMS, promovendo
-              a participação e o pensamento crítico dentro da comunidade
-              escolar.
+              Atualmente, trabalho desenvolvendo uma engine própria para o jogo,
+              utilizando <strong>C++</strong> em conjunto com uma biblioteca
+              multimídia chamada <strong>SFML</strong> (Simple and Fast
+              Multimedia Library). O objetivo é tornar o jogo otimizado, rodando
+              nativamente em computadores Linux e Windows, também permitindo uma
+              customização e gerenciamento de código mais eficaz.
             </p>
             <div className="my-6">
               <h4 className="font-bold text-center w-full mb-2">
@@ -257,44 +261,45 @@ export default function Home() {
               <div className="w-full flex items-center justify-around">
                 <Image
                   className="hover:scale-105"
-                  src="/next.svg"
-                  width={100}
-                  height={50}
-                  alt="Logotipo Next.js"
+                  src="/cpp.png"
+                  width={70}
+                  height={70}
+                  title="C++"
+                  alt="Logotipo C++"
                 />
                 <Image
                   className="hover:scale-105"
-                  src="/react.svg"
-                  width={100}
-                  height={50}
-                  alt="Logotipo React.js"
+                  src="/cmake.png"
+                  width={70}
+                  height={70}
+                  title="CMake"
+                  alt="Logotipo CMake"
                 />
                 <Image
                   className="hover:scale-105"
-                  src="/datocms.svg"
+                  src="/sfml.png"
                   width={100}
                   height={50}
-                  alt="Logotipo DatoCMS"
+                  title="SFML"
+                  alt="Logotipo SFML"
                 />
                 <Image
                   className="hover:scale-105"
-                  src="/openweather.svg"
-                  width={100}
+                  src="/gcc.png"
+                  width={60}
                   height={50}
-                  alt="Logotpo OpenWeather API"
+                  title="GNU Compiler Colection"
+                  alt="Logotpo GNU Compiler Colection"
                 />
               </div>
             </div>
             <div className="flex items-center">
               <button
-                className="px-5 py-3 bg-black text-white mr-4 flex items-center rounded-lg hover:scale-105"
+                className="px-5 py-3 bg-black text-white mr-4 mt-4 flex items-center rounded-lg hover:scale-105"
                 onClick={(e) => {
                   e.preventDefault();
                   window
-                    .open(
-                      "https://github.com/marshmll/jornalestudantiltiradentes",
-                      "_blank"
-                    )
+                    .open("https://github.com/marshmll/rpg-game", "_blank")
                     .focus();
                 }}
               >
@@ -307,29 +312,9 @@ export default function Home() {
                 ></Image>
                 Ver no GitHub
               </button>
-              <button
-                className="px-5 py-3 bg-red-800 text-white mr-4 flex items-center rounded-lg hover:scale-105"
-                onClick={(e) => {
-                  e.preventDefault();
-                  window
-                    .open(
-                      "https://jornalestudantiltiradentes.vercel.app",
-                      "_blank"
-                    )
-                    .focus();
-                }}
-              >
-                <Image
-                  src="/jornal.png"
-                  width={30}
-                  height={30}
-                  className="mr-4"
-                ></Image>
-                Site do projeto
-              </button>
             </div>
           </div>
-          <div className="border-2 w-6/12 h-[20rem] bg-[url('/jornal-estudantil.png')] bg-top bg-no-repeat bg-cover hover:bg-[url('/jornal-estudantil.gif')]"></div>
+          <div className="border-2 w-6/12 h-[23rem] bg-[url('/biohazrd.png')] bg-top bg-no-repeat bg-cover hover:bg-[url('/biohazrd.gif')]"></div>
         </article>
       </section>
     </>
