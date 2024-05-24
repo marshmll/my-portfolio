@@ -10,6 +10,7 @@ export default function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>Renan Andrade</title>
+        <link rel="icon" href="/logo.png"></link>
       </Head>
       <Component {...pageProps} />
     </>
